@@ -1,0 +1,58 @@
+{
+            "english-us-liberal":       
+            			  	[
+		                        "http://cnn.com",
+		                        "http://npr.org",
+		                        "http://newyorker.com",
+		                        "http://medium.com",
+		                        "http://washingtonpost.com",
+		                        "https://www.huffpost.com/",
+		                        "https://www.buzzfeed.com/",
+		                        "https://www.eonline.com/",
+		                        "https://www.nytimes.com/",
+		                        "https://www.theatlantic.com/"
+                               	],
+
+            "english-us-conservative":  
+            				[
+		                        "http://foxnews.com",
+		                        "https://www.nationalreview.com",
+		                        "https://www.dailywire.com",
+		                        "https://www.breitbart.com",
+		                        "https://www.rt.com/",
+		                        "https://nypost.com/"
+                             		],
+                             		
+            "english-uk-liberal":       
+            				[
+		                        "https://www.huffpost.com/",
+		                        "https://morningstaronline.co.uk/",
+		                        "https://redpepper.org.uk",
+		                        "https://www.mirror.co.uk/news/",
+		                        "https://www.theguardian.com/international",
+		                        "https://buzzfeed.com",
+		                        "https://www.aljazeera.com/"
+                               	],
+                               	
+            "english-uk-conservative":  
+            				[
+		                        "https://www.telegraph.co.uk/",
+		                        "https://www.thesun.co.uk/",
+		                        "https://www.express.co.uk/",
+		                        "https://www.dailystar.co.uk/",
+		                        "https://www.conservativehome.com/",
+		                        "https://www.rt.com/uk/"
+                                	],
+                                	
+            "german-liberal":       
+            				[
+		                        "https://www.zeit.de",
+		                        "https://www.fr.de/",
+		                        "https://taz.de/"
+                                	],
+                                	
+            "german-conservative":  	
+            				[
+                                	 "https://www.welt.de/"
+                                	]
+}
