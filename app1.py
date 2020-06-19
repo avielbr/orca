@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import math
 import nltk
 import selenium.common.exceptions
