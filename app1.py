@@ -9,6 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 from tkinter import *
+from tkinter.ttk import *
 import json
 
 URLS = json.load(open('URLS.json'))
@@ -68,7 +69,7 @@ class Browser:
 
     def click_random_link(self):
         print('Trying to click random link...')
-        links = [link for link in self.driver.find_elements_by_tag_name("a") if link.is_displayed()]
+        links = [link for link in self.driver.find_elements_by_tag_name("a")]
 
         if links:
             l = links[rand(0, len(links) - 1)]
@@ -150,14 +151,22 @@ class Runner:
         self.bank = ''
         self.root = Tk()
         self.language = ''
+        self.style = Style()
 
     def menu(self):
-        Button(self.root, text='US - Liberal', command=lambda: self.set_bank('english-us-liberal')).pack()
-        Button(self.root, text='US - Conservative', command=lambda: self.set_bank('english-us-conservative')).pack()
-        Button(self.root, text='UK - Liberal', command=lambda: self.set_bank('english-uk-liberal')).pack()
-        Button(self.root, text='UK - Conservative', command=lambda: self.set_bank('english-uk-conservative')).pack()
-        Button(self.root, text='Germany - Liberal', command=lambda: self.set_bank('german-liberal')).pack()
-        Button(self.root, text='Germany - Conservative', command=lambda: self.set_bank('german-conservative')).pack()
+        self.style.configure('W.TButton', font=('calibri', 12))
+
+        self.root.geometry('200x200')
+        self.root.title('orca')
+        self.root.iconbitmap("orca.ico")
+
+        Button(self.root, text='US - Liberal', command=lambda: self.set_bank('english-us-liberal'), style = 'W.TButton').pack()
+        Button(self.root, text='US - Conservative', command=lambda: self.set_bank('english-us-conservative'), style = 'W.TButton').pack()
+        Button(self.root, text='UK - Liberal', command=lambda: self.set_bank('english-uk-liberal'), style = 'W.TButton').pack()
+        Button(self.root, text='UK - Conservative', command=lambda: self.set_bank('english-uk-conservative'), style = 'W.TButton').pack()
+        Button(self.root, text='Germany - Liberal', command=lambda: self.set_bank('german-liberal'), style = 'W.TButton').pack()
+        Button(self.root, text='Germany - Conservative', command=lambda: self.set_bank('german-conservative'), style = 'W.TButton').pack()
+
         self.root.mainloop()
 
     def set_bank(self, selection):
