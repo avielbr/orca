@@ -182,25 +182,25 @@ class Runner:
     def standard_run(self):
         run = self.go
         run.open_random_page(self.bank)
-        run.scroll()
+        # run.scroll()
         run.click_random_link()
         run.wait()
         run.click_random_link()
-        run.scroll()
+        # run.scroll()
         run.new_tab(self.bank)
-        run.scroll()
+        # run.scroll()
         run.wait()
         run.click_random_link()
-        run.scroll()
+        # run.scroll()
         run.google_search()
         run.wait()
         run.click_random_link()
-        run.scroll()
+
         run.wait()
         run.youtube_search()
-        run.scroll()
+        # run.scroll()
         run.google_search()
-        run.scroll()
+        # run.scroll()
 
 
 runner = Runner()
